@@ -18,4 +18,4 @@ for i in range(77031, N):
         length = t
         ans = i
 
-print(ans, length)
+print(ans)
