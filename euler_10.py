@@ -9,13 +9,12 @@ def sieve(n):
         p += 1
 
 
-N = 200000
+N = 2000000  # 2 million
 prime = [True for i in range(N + 1)]
 sieve(N)
-counter = 0
+sum_prime = 0
 for p in range(N):
     if prime[p]:
-        counter += 1
-    if counter == 10001:
-        print(p)
-        break
+        sum_prime += p
+
+print(sum_prime)
