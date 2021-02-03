@@ -21,5 +21,5 @@ for i in range(N+1):
             x = x * i
         # print("x", x)
         ans = ans * x
-        
+
 print(ans)
