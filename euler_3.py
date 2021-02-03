@@ -2,7 +2,7 @@ import math
 
 
 def is_prime(n):
-    for i in range(2, int(math.sqrt(n))):
+    for i in range(2, int(math.sqrt(n))+1):
         if n % i == 0:
             return False
     return True
@@ -15,4 +15,3 @@ for i in range(int(math.sqrt(N)), 2, -1):
         if is_prime(i):
             print(i)
             break
-# comment
