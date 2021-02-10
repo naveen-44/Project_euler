@@ -1,3 +1,4 @@
+from time import time
 def phi(n): 
     result = n
     p = 2  
