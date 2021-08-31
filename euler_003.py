@@ -7,11 +7,11 @@ def is_prime(n):
             return False
     return True
 
-
+def largestPrimeFactor(N):
+    for i in range(int(math.sqrt(N)), 1, -1):
+        if N % i == 0:
+            if is_prime(i):
+                return i
+            
 N = 600851475143
-
-for i in range(int(math.sqrt(N)), 2, -1):
-    if N % i == 0:
-        if is_prime(i):
-            print(i)
-            break
+print(largestPrimeFactor(N))
